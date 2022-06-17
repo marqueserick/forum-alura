@@ -17,7 +17,7 @@ import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/auth")
-@Profile("prod")
+@Profile(value = {"test","prod"})
 public class AutenticacaoController {
 
     @Autowired
